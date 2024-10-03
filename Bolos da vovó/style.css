@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --cor1: #D26168;
+    --cor2: #CA202B;
+    --cor3: #4A2225;
+    --cor4: #381D2A;
+    --cor5: #4A0C10;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span.contraste {
+    font-weight: bold;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* cabeçalho topo */
+header#topo {
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    position: relative;
+}
+header#topo > img {
+    width: 140px;
+    height: 60px;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+header#topo > nav {
+    float: right;
+    margin-top: 35px;
+    margin-right: 8%;
+}
+header#topo > nav a {
+    text-decoration: none;
+    padding: 8px 12px;
+    color: var(--cor1);
+}
+header#topo > nav a:hover {
+    color: white;
+    background-color: var(--cor2);
+    border-radius: 12px;
+    transition: .5s;
+}
+
+/* artigo chamativo */
+article#destaque {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+article#destaque > #img-torta {
+    width: 100%;
+    height: 100%;
+}
+article#destaque > h1 {
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    font-size: 2.2em;
+    top: 250px;
+    left: 50px;
+}
+article#destaque > p {
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    font-size: 1.5em;
+    top: 300px;
+    left: 50px;
+}
+
+/* principais */
+main {
+    width: 800px;
+    margin: auto;
+}
+
+main div#destaque-txt {
+    background-color: var(--cor4);
+    color: white;
+    margin: 25px 0px;
+    padding: 20px 10px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/* seçoes */
+section#apresentacao {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+}
+section#apresentacao img {
+    width: 210px;
+    height: 140px;
+    margin-right: 20px;
+}
+section#apresentacao div.amostra > h2 {
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    color: var(--cor2);
+    padding-bottom: 6px;
+}
+section#apresentacao div.amostra > p {
+    text-align: left;
+    font-size: 0.8em;
+    max-width: 210px;
+    font-family: 'Roboto Mono', monospace;
+}
+section#apresentacao p.saiba-mais > a {
+    padding-top: 8px;
+    text-decoration: none;
+    color: var(--cor1);
+    text-align: center;
+}
+section#apresentacao p.saiba-mais:hover {
+    text-decoration: underline;
+}
+section#apresentacao div.amostra {
+    flex: 1;
+    margin-left: 30px;
+}
+
+/* outros artigos */
+article div#caixa {
+    background-color: var(--cor4);
+    padding: 30px 20px;
+    height: 400px;
+    display: flex;
+    position: relative;
+}
+article div#caixa > img {
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 25px;
+    flex: 1;
+}
+article div#caixa > p {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-align: justify;
+    flex: 1;
+    margin-top: 50px;
+}
+
+/* roda pé */
+footer {
+    background-color: var(--cor2);
+    color: white;
+    padding: 10px 15px;
+    margin-top: 25px;
+    position: relative;
+}
+footer nav {
+    position: absolute;
+    top: 40px;
+}
+footer nav ul a {
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+}
+footer div#rd-social > h2 {
+    font-size: 1.2em;
+}
+footer div#rd-social {
+    position: absolute;
+    text-align: center;
+    padding-bottom: 15px;
+    top: 10px;
+    left: 230px;
+}
+footer div#rd-social a img.sociais {
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px;
+}
+footer div#contato {
+    position: absolute;
+    top: 40px;
+    right: 15px;
+}
+footer div#rd-destaque {
+    background-color: black;
+    text-align: center;
+    padding: 12px 0px;
+    margin-top: 100px;
+}

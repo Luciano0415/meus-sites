@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cálculo de Horas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icon.png">
+</head>
+<body>
+  <div class="container">
+    <h1>Cálculo de Horas</h1>
+
+    <label for="pecasInsp">Quantas peças você inspecionou?</label>
+    <input type="number" id="pecasInsp" placeholder="Quantidade de peças" />
+
+    <label for="pecasPorHora">Quantas peças por hora são?</label>
+    <input type="number" id="pecasPorHora" placeholder="Quantidade por hora" />
+
+    <button id="btnCalcular" type="button">Calcular</button>
+
+    <p id="textoInfo"></p>
+  </div>
+
+  <!-- O atributo 'defer' garante que o JS só rode depois do HTML estar carregado -->
+  <script src="main.js" defer></script>
+</body>
+</html>
